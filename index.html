@@ -17,12 +17,19 @@
     .main-logo { max-width: 200px; margin: 20px auto; display: block; }
     .case-study-img, .feature-img { display: block; width: 50%; max-width: 100%; height: auto; margin: 20px auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
     @media (max-width: 600px) { .case-study-img, .feature-img { width: 90%; } }
+    .video-wrap { position: relative; width: 100%; max-width: 720px; aspect-ratio: 16 / 9; margin: 25px auto; border-radius: 8px; overflow: hidden; background: #000; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+    .video-wrap iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
     ul { margin: 15px 0; padding-left: 25px; }
     li { margin-bottom: 8px; }
     footer { margin-top: 50px; padding-top: 20px; border-top: 2px solid #ddd; font-size: 0.9em; color: #666; text-align: center; }
     .highlight-green { background-color: #d4edda; padding: 3px 8px; font-weight: bold; border-radius: 3px; color: #155724; }
     .highlight-yellow { background-color: #fff3cd; padding: 3px 8px; font-weight: bold; border-radius: 3px; color: #856404; }
     .highlight-red { background-color: #f8d7da; padding: 3px 8px; font-weight: bold; border-radius: 3px; color: #721c24; }
+    .subline { text-align: center; font-size: 1.15em; font-weight: 600; color: #2c3e50; margin: 10px 0 20px; }
+    .cta { text-align: center; margin: 35px 0; }
+    .badge-soon { display: inline-block; text-align: center; vertical-align: middle; }
+    .hero-images .badge-soon img { margin-bottom: 0; display: block; margin-left: auto; margin-right: auto; }
+    .badge-soon small { display: block; font-size: 0.8em; font-weight: bold; color: #666; margin: 2px 0 8px; }
     .tagline { text-align: center; font-size: 1.2em; font-style: italic; color: #555; margin: 20px 0; }
   </style>
 </head>
@@ -39,27 +46,50 @@
     <img src="https://rationiq.github.io/assets/icon.png" alt="RATION-IQ Icon" class="main-logo">
     <h1>RATION-IQ AI</h1>
     <p class="tagline"><strong>Army Fitness Test (AFT) - AI Meal Nutrition Calorie Scanner. Perform with Confidence.</strong></p>
+    <p class="subline">Scan your meal. Know your calories, your nutrients and your AFT readiness before you eat.</p>
     <div class="hero-images">
-      <img src="https://rationiq.github.io/assets/apple.png" alt="Download on the App Store"><a href="https://play.google.com/store/apps/details?id=com.rationiq.ration_iq_v2&amp;pcampaignid=web_share" target="_blank" rel="noopener noreferrer">
+      <span class="badge-soon"><img src="https://rationiq.github.io/assets/apple.png" alt="App Store (coming soon)"><small>Coming soon</small></span><a href="https://play.google.com/store/apps/details?id=com.rationiq.ration_iq_v2&amp;pcampaignid=web_share" target="_blank" rel="noopener noreferrer">
       <img src="https://rationiq.github.io/assets/google.png" alt="Get it on Google Play"></a>
     </div>
   </header>
 
   <main>
-    <p><strong>RATION-IQ</strong> is a next-generation nutrition and readiness platform built for people who operate under standards, military personnel, first responders, and serious fitness professionals.</p>
-    <p>At its core is an advanced <strong>AI TACTICAL SYSTEM</strong> that turns food into actionable intelligence, helping you fuel correctly, train smarter, and stay ready before performance is tested.</p>
+    <p><strong>RATION-IQ</strong> helps Soldiers get ready for the Army Fitness Test, and anyone who lives by a standard. Here is what you get:</p>
+    <ul>
+      <li><strong>Know what is in your meal in seconds.</strong> One photo of your tray, plate, or field ration gives you calories, macros, and micronutrients. No manual logging.</li>
+      <li><strong>Catch a bad food choice before you eat it.</strong> Green, yellow, and red alerts flag excess sugar, sodium, and empty calories while you can still change your tray.</li>
+      <li><strong>Know where you stand on the 0.55 waist-to-height standard.</strong> See a pass or fail result against the Army standard, so there are no surprises on test day.</li>
+      <li><strong>Get answers based on your own data.</strong> After 3 days of logging, ask the AI Tactical Coach about your nutrition, AFT performance, and goals.</li>
+      <li><strong>Track your progress with evidence, not guesswork.</strong> Follow every AFT event score and export professional readiness reports.</li>
+    </ul>
+
+    <div class="video-wrap">
+      <iframe src="https://www.youtube-nocookie.com/embed/TXEkAS6edUc" title="RATION-IQ AI app overview video" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
 
     <h2>SEE YOUR FUEL. KNOW YOUR READINESS.</h2>
-    <p>Take one photo of your meal: A DFAC tray, plate, or field ration. <strong>RATION-IQ</strong> analyzes the meal and provides:</p>
+    <p>Snap your DFAC tray, plate, or field ration. In seconds you get:</p>
     <ul>
-      <li>Calorie breakdown.</li>
-      <li>Macro/micro nutrient analysis.</li>
-      <li>Nutritional insights.</li>
+      <li>Your calories.</li>
+      <li>Your macros and micronutrients.</li>
+      <li>Clear insights on what to fix.</li>
     </ul>
-    <p>No manual logging. No guesswork. AI-powered nutritional intelligence in seconds.</p>
+    <p>No manual logging. No guesswork.</p>
+
+    <h2>KNOW YOUR NUMBER BEFORE TEST DAY: THE 2026 WAIST-TO-HEIGHT STANDARD</h2>
+    <p>With updated Army Fitness Test combat standards effective 2026, <strong>RATION-IQ</strong> introduces <strong>Performance Path Intelligence</strong>. Since July 7, 2026, the Army measures body composition by waist-to-height ratio only. Your waist at the navel divided by your height must be under 0.55. No AFT score exempts a Soldier.</p>
+    <ul>
+      <li>A Soldier who is 70 inches tall needs a waist under 38.5 inches.</li>
+      <li>Multiply your height by 0.55 to find yours.</li>
+      <li>RATION-IQ does the math and shows pass or fail.</li>
+      <li>Optimize food intake.</li>
+      <li>Reduce uncertainty.</li>
+    </ul>
+    <img src="https://rationiq.github.io/assets/army-standard-waist-to-height-ratio.png" alt="RATION-IQ body fat screen showing a waist-to-height ratio of 0.486 passing the Army standard of under 0.550" width="1072" height="1884" class="feature-img" loading="lazy">
+    <blockquote><ul><li>Sources: <a href="https://armypubs.army.mil/epubs/DR_pubs/DR_a/ARN43586-ARMY_DIR_2025-06-000-WEB-1.pdf" target="_blank" rel="noopener noreferrer">Army Directive 2025-06 (AFT)</a> and <a href="https://armypubs.army.mil/epubs/DR_pubs/DR_a/ARN47030-ARMY_DIR_2026-13-000-WEB-1.pdf">Army Directive 2026-13</a> (body composition). Army policy can change, so confirm with your unit.</li></ul></blockquote>
 
     <h2>BUILT FOR READINESS, NOT AFTER-ACTION REPORTS</h2>
-    <p>Most fitness apps are reactive. They tell you how you did after the test is over. <strong>RATION-IQ</strong> helps users make informed nutrition decisions before performance is tested, supporting better food choices, recovery, and body composition in the days leading up to test day.</p>
+    <p>Most fitness apps tell you how you did after the test is over. <strong>RATION-IQ</strong> helps you make better food choices before it counts, in the days leading up to test day.</p>
 
     <h2>TACTICAL ADVANTAGE: REAL-TIME FOOD INTELLIGENCE</h2>
     <h3>An NCO Scenario Case Study</h3>
@@ -76,44 +106,44 @@
     <p>By the time he sits down to eat, Sergeant Miller is not guessing. He has objective nutritional data about what he is fueling with - and more importantly, what he avoided. That food decision improved the nutritional quality of the meal before training and testing day.</p>
     <p>That is not tracking. That is <strong>INTEL</strong> decision support.</p>
 
-    <h2>PERFORMANCE RESULTS THAT CONNECT THE DOTS</h2>
-    <p>Later that day, Sergeant Miller logs a practice <strong>AFT</strong>: 2-mile run, Sprint-Drag-Carry, Strength events. <strong>RATION-IQ</strong> correlates his fuel intake with performance and provides a readiness assessment based on nutrition and performance data.</p>
-    <p>The app system includes body composition as well as the new Army Standard (WHtR) waist-to-height ratio requirement and reports to the user on his/her measure status in relation to army standard established limits. Sergeant Miller is maintaining AFT mission ready status.</p>
+    <div class="cta">
+      <h3>SCAN YOUR NEXT MEAL</h3>
+      <div class="hero-images">
+        <span class="badge-soon"><img src="https://rationiq.github.io/assets/apple.png" alt="App Store (coming soon)"><small>Coming soon</small></span>
+        <a href="https://play.google.com/store/apps/details?id=com.rationiq.ration_iq_v2&amp;pcampaignid=web_share" target="_blank" rel="noopener noreferrer"><img src="https://rationiq.github.io/assets/google.png" alt="Get it on Google Play"></a>
+      </div>
+    </div>
 
-    <h2>DESIGNED FOR THE 2026 AFT STANDARDS</h2>
-    <p>With updated Army Fitness Test combat standards effective 2026, <strong>RATION-IQ</strong> introduces <strong>Performance Path Intelligence</strong>: Since July 7, 2026, the Army measures body composition by waist-to-height ratio only. Your waist at the navel divided by your height must be under 0.55. No AFT score exempts a Soldier.</p>
-    <ul>
-      <li>A Soldier who is 70 inches tall needs a waist under 38.5 inches.&nbsp;</li><li>Multiply your height by 0.55 to find yours.</li>
-      <li>Optimize food intake.</li>
-      <li>Reduce uncertainty.</li></ul>
-    <img src="https://rationiq.github.io/assets/army-standard-waist-to-height-ratio.png" alt="RATION-IQ body fat screen showing a waist-to-height ratio of 0.486 passing the Army standard of under 0.550" width="1072" height="1884" class="feature-img" loading="lazy">
-    <blockquote><ul><li>Sources: <a href="https://armypubs.army.mil/epubs/DR_pubs/DR_a/ARN43586-ARMY_DIR_2025-06-000-WEB-1.pdf" target="_blank" rel="noopener noreferrer">Army Directive 2025-06 (AFT)</a> and <a href="https://armypubs.army.mil/epubs/DR_pubs/DR_a/ARN47030-ARMY_DIR_2026-13-000-WEB-1.pdf">Army Directive 2026-13</a> (body composition). Army policy can change, so confirm with your unit.</li></ul></blockquote>
+    <h2>PERFORMANCE RESULTS THAT CONNECT THE DOTS</h2>
+    <p>Later that day, Sergeant Miller logs a practice <strong>AFT</strong>: 2-mile run, Sprint-Drag-Carry, strength events. <strong>RATION-IQ</strong> connects his fuel intake to his performance and gives him a readiness assessment.</p>
+    <p>It also checks his waist-to-height ratio against the Army standard. Sergeant Miller is on track and mission ready.</p>
 
     <h2>STRATEGIC BRIEFING: CLOSING THE INTEL GAP</h2>
-    <p>The greatest threat to readiness is not effort, it is uncertainty. Not knowing whether your fuel, body composition, or recovery trajectory will meet standard creates unnecessary risk. <strong>RATION-IQ</strong> closes that gap with objective, real-time intelligence.</p>
+    <p>The biggest threat to readiness is not effort. It is uncertainty: not knowing if your fuel, body composition, or recovery will meet the standard. <strong>RATION-IQ</strong> replaces that doubt with objective, real-time data.</p>
 
     <h2>YOUR COMPLETE READINESS SYSTEM</h2>
+    <p>Every tool in RATION-IQ exists to answer one question: <strong>am I ready?</strong></p>
     <ul>
-      <li><strong>AI Tactical Coach:</strong> Your personal readiness assistant. After 3 days of logging data, ask questions about nutrition, AFT performance, readiness metrics, and goal planning. Recommendations are personalized using your profile and logged history.
+      <li><strong>Ask your AI Tactical Coach anything.</strong> After 3 days of logging, ask about nutrition, AFT performance, and goals. Answers are based on your own data.
         <img src="https://rationiq.github.io/assets/ai-coach.png" alt="Neural Nebula AI Coach screen with text and voice command input, showing performance intel and readiness insights" width="603" height="1104" class="feature-img" loading="lazy">
       </li>
-      <li><strong>AI Food Intelligence:</strong> Scan meals with your camera to identify food items and estimate calories, macros, micronutrients, vitamins, and minerals. Get a Mission Readiness Score and Mission Endurance based on your biometrics and operational demand.</li>
-      <li><strong>AFT Tracking:</strong> Follow individual event scores, overall progression, readiness targets, and minimum and maximum scoring thresholds based on the 2026 Army Fitness Test standards.</li>
-      <li><strong>AR 600-9 Body Composition:</strong> Calculate body fat percentage using the Army tape test method, with pass or fail determinations based on the 2026 waist-to-height ratio (WHtR) standard.</li>
-      <li><strong>Mission Readiness Reports:</strong> Generate professional assessments combining nutrition and fitness logged data. Identify strengths, deficiencies, and trends, then export as a PDF via WhatsApp, email, or print.
+      <li><strong>Know what you are eating in seconds.</strong> Scan meals with your camera. Get calories, macros, vitamins, and minerals, plus a Mission Readiness Score and Mission Endurance based on your body and workload.</li>
+      <li><strong>See where you stand on every event.</strong> Track event scores, progress, targets, and the minimum and maximum scoring thresholds for the 2026 AFT.</li>
+      <li><strong>Know if you meet the body composition standard.</strong> Get your body fat percentage using the Army tape test, with pass or fail based on the 2026 waist-to-height standard.</li>
+      <li><strong>Turn your data into a plan you can show.</strong> Generate PDF readiness reports with your strengths, gaps, and trends. Print them, email them, or share them through WhatsApp.
         <img src="https://rationiq.github.io/assets/army-fitness-test-mission-reports.png" alt="Mission Readiness Report preview with AFT event breakdown and AI coach tactical advice, exportable as a PDF" width="802" height="1700" class="feature-img" loading="lazy">
       </li>
-      <li><strong>Hydration Management:</strong> Track daily water intake and monitor hydration status with a visual dashboard indicator.
+      <li><strong>Stay ahead of dehydration.</strong> Log your water and watch your hydration status on the dashboard, so you can fix a shortfall before it hurts training or recovery.
         <img src="https://rationiq.github.io/assets/army-fitness-test-hydration.png" alt="Thermal hydration tracker showing daily water intake and hydration readiness status" width="1097" height="1923" class="feature-img" loading="lazy">
       </li>
-      <li><strong>Calibration Profile:</strong> Choose Intense (field operations, rucking), Moderate (garrison and routine PT), or Light (administrative and desk duty). All fueling and readiness calculations adapt automatically.
+      <li><strong>Get targets that fit your workload.</strong> Pick Intense (field ops, rucking), Moderate (garrison, routine PT), or Light (admin, desk duty). Your fueling and readiness numbers adjust automatically.
         <img src="https://rationiq.github.io/assets/calibrate-army-fitness-test-nutrition.png" alt="Mission Profile Detected screen showing nutrition targets that adapt to Garrison, Training and Field Ops intensity levels" width="810" height="1244" class="feature-img" loading="lazy">
       </li>
     </ul>
 
     <h2>COMMAND CENTER: TRAIN THE EVENT, NOT THE DISTRACTION</h2>
-    <p>RATION-IQ does not bury you in a library of generic exercises. The Army Fitness Test has five events, and the most direct way to get better at an event is to practice that event.</p>
-    <p>The <strong>Command Center</strong> is a dedicated module with an image for each of the five AFT events:</p>
+    <p>RATION-IQ does not bury you in generic exercises. The AFT has five events, and the best way to improve at an event is to practice that event.</p>
+    <p>The <strong>Command Center</strong> shows each one:</p>
     <ul>
       <li>3-Repetition Maximum Deadlift</li>
       <li>Hand-Release Push-Up</li>
@@ -121,31 +151,36 @@
       <li>Plank</li>
       <li>2-Mile Run</li>
     </ul>
-    <p>Tap any event and RATION-IQ takes you to the official U.S. Army instructional videos on YouTube for that exact event, so you learn the correct technique from the source instead of a third-party interpretation.</p>
-    <p>The idea is simple: you will be tested on these events, so build your skill in these events. Want a stronger deadlift? Practice the deadlift. Want more push-ups? Practice push-ups the way the standard requires. Other exercises can be useful, but RATION-IQ keeps your attention where your score is earned, and it leaves out the redundant routines.</p>
+    <p>Tap an event to watch the official U.S. Army instructional video for it on YouTube, and learn the correct technique from the source.</p>
+    <p>You will be tested on these five events, so train these five events. Want a stronger deadlift? Practice the deadlift. Want more push-ups? Practice push-ups the way the standard requires. RATION-IQ keeps you focused on where your score is earned.</p>
 
     <h2>BUILT FOR EVERY ROLE</h2>
     <ul>
-      <li><strong>For Commanders:</strong> Support unit readiness, accountability, and performance culture with objective data.</li>
-      <li><strong>For Drill Sergeants:</strong> Enforce standards with clear, no-excuses nutritional intelligence.</li>
-      <li><strong>For NCOs:</strong> Guide smarter food choices and align nutrition with PT outcomes, for AFT readiness, for you and your Soldiers.</li>
-      <li><strong>For Soldiers:</strong> Control fuel intake, reduce uncertainty, and meet AFT standards with confidence.</li>
-      <li><strong>For Civilians:</strong> Apply military-grade discipline to everyday nutrition and health optimization.</li>
+      <li><strong>For Soldiers:</strong> Control your fuel, remove the guesswork, and prepare for the AFT with confidence.</li>
+      <li><strong>For NCOs:</strong> Guide smarter food choices and link nutrition to PT results, for you and your Soldiers.</li>
+      <li><strong>For Drill Sergeants:</strong> Enforce standards with clear, no-excuses nutrition data.</li>
+      <li><strong>For Commanders:</strong> Support unit readiness and accountability with objective data.</li>
+      <li><strong>For Civilians:</strong> Bring the same discipline to everyday nutrition and health.</li>
     </ul>
 
     <h2>CONTROL WHAT MATTERS</h2>
-    <p><strong>RATION-IQ</strong> puts you in command of: Calorie precision, nutrient balance, body fat percentage standard data besides the Army new standard waist-to-height ratio, and AFT readiness assessments.</p>
+    <p><strong>RATION-IQ</strong> puts you in command of:</p>
+    <ul>
+      <li>Your calories and nutrients, meal by meal.</li>
+      <li>Your body fat percentage and the Army waist-to-height standard.</li>
+      <li>Your AFT readiness.</li>
+    </ul>
 
     <h2>YOUR PRIVACY MATTERS</h2>
     <img src="https://rationiq.github.io/assets/your-data-info-is-safe.png" alt="RATION-IQ privacy: no tracking, no collection, no sharing, and you control your data" width="1667" height="2043" class="feature-img" loading="lazy">
 
     <h2>READY BEFORE IT COUNTS</h2>
-    <p><strong>RATION-IQ</strong> helps you show up ready - not hopeful. Fuel smarter. Train with confidence. Meet standards before you are tested.</p>
-    
+    <p><strong>RATION-IQ</strong> helps you show up ready, not hopeful. Fuel smarter. Train with confidence. Know where you stand before you are tested.</p>
+
     <div style="text-align: center; margin-top: 40px;">
-      <h3>FREE TRIAL AT THE APP STORE!</h3>
+      <h3>Free trial on Google Play. App Store coming soon.</h3>
       <div class="hero-images">
-        <img src="https://rationiq.github.io/assets/apple.png" alt="Download on the App Store">
+        <span class="badge-soon"><img src="https://rationiq.github.io/assets/apple.png" alt="App Store (coming soon)"><small>Coming soon</small></span>
         <a href="https://play.google.com/store/apps/details?id=com.rationiq.ration_iq_v2&amp;pcampaignid=web_share"><img src="https://rationiq.github.io/assets/google.png" alt="Get it on Google Play"></a>
       </div>
     </div>
